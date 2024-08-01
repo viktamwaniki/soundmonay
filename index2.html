@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundMoney Presale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo-text">SoundMoney</a>
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="30" viewBox="0 0 40 30">
+                    <g fill="#ffffff" stroke="#ffffff" stroke-width="2">
+                      <line x1="0" y1="4" x2="40" y2="4"/>
+                      <line x1="0" y1="15" x2="40" y2="15"/>
+                      <line x1="0" y1="26" x2="40" y2="26"/>
+                    </g>
+                  </svg> 
+            </button>
+            <nav id="topNav" class="sidebar" >
+                <button class="nav-button">Home</button>
+                <button class="nav-button">About</button>
+                <button class="nav-button">Services</button>
+                <a href="#" class="topnavlinks">Contact</a>
+            </nav>
+            
+        </div>
+        
+    </header>
+    <main>
+        <div class="content-container" onclick="closeMenu()">
+            <div class="container1" >
+                <div class="welcome-section"  >
+                    <h1>Your Music, Your Wealth:</h1>
+                    <h2>Join the SoundMoney Revolution Now!</h2>
+                    <p>
+                        Step into a world where your love for music not only enriches your soul but also 
+                        fills your pockets. Welcome to SoundMoney, where every beat, every note, and 
+                        every second of your digital consumption becomes a pathway to financial 
+                        empowerment.
+                    </p>
+                    <div id="introduction">
+                        <p>Step into a world where your love for music not only enriches your soul but also fills your pockets. Welcome to SoundMoney, where every beat, every note, and every second of your digital consumption becomes a pathway to financial empowerment. This is more than just an opportunity—it's a revolution waiting for you to join.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="division3">
+                <div id="section1">
+                    <h2>Your Time, Your Money</h2>
+                    <p>Imagine a world where every moment you spend on your favorite songs and podcasts is valued and rewarded. With SoundMoney's Fan Tokenization, that dream becomes a reality. Every stream, every listen, every engagement earns you tokens, transforming your time into tangible wealth. It's time to reclaim what's rightfully yours—download SoundMoney now and start earning from your passion.</p>
+                </div>
+            </div>
+            <div class="token-container">
+                <h1>Buy SoundMoney Token</h1>
+                <div class="status">
+                    <span class="live-dot"></span>
+                    Presale is live
+                </div>
+                <div class="funding-info">
+                    Raised: $5000 <br>
+                    Target: $10,000,000
+                </div>
+                <div class="token-pricing">
+                    <p>1 SNDM = $0.00376</p>
+                    <p>LISTING PRICE $0.05 (165.96%)</p>
+                    <p>NEXT PRICE $0.01 (+15.16%)</p>
+                </div>
+                <div class="payment-method">
+                    <label for="payment-select">Select a payment method</label>
+                    <select id="payment-select">
+                        <option value="ETH">ETH</option>
+                        <option value="SNDM">SoundMoney</option>
+                    </select>
+                </div>
+                <button class="connect-wallet-btn">Connect Wallet</button>
+                <div class="instructions">
+                    <a href="#">How to buy?</a>
+                    <a href="#">SoundMoney wallet</a>
+                </div>
+            </div>
+
+            <div class="division4">
+                <div id="section2">
+                    <h2>Empowerment Through Music</h2>
+                    <p>Music has the power to move us, inspire us, and unite us. With SoundMoney, that power extends beyond the realm of emotions—it becomes a tool for financial empowerment. By participating in Fan Tokenization, you become an active contributor to the success of your favorite artists, shaping the future of music with every engagement. Your voice matters, your passion matters—join us and be part of something extraordinary.</p>
+                </div>
+            
+                <div id="section3">
+                    <h2>A Fairer Future for All</h2>
+                    <p>Gone are the days of unfair royalties and exploitative middlemen. SoundMoney's decentralized royalty distribution ensures that artists receive their fair share of the revenue generated by their work. By supporting Fan Tokenization, you're not just earning for yourself—you're championing a more equitable music industry where talent and creativity are valued above all else.</p>
+                </div>
+            
+                <div id="section4">
+                    <h2>Take Action Now</h2>
+                    <p>The time to act is now. Don't let this opportunity slip through your fingers. Join the millions of fans who are already earning tokens for their passion on SoundMoney. Together, let's create a future where music isn't just a source of joy—it's a source of wealth and empowerment. Download SoundMoney today and start your journey to financial freedom.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer>
+        <p>2024 SoundMoney Presale. All rights reserved.</p>
+    </footer>
+
+    <script>
+        
+        function toggleMenu() {
+            var topNav = document.getElementById('topNav');
+            if (topNav.style.display === 'block') {
+                topNav.style.display = 'none';
+            } else {
+                topNav.style.display = 'block';
+            }
+        }
+        function closeMenu() {
+           var topNav = document.getElementById('topNav');
+           var overlay = document.getElementById('overlay');
+             if (topNav.style.display === 'block') {
+                 topNav.style.display = 'none';
+                 overlay.style.display = 'none'; // Hide overlay when clicking outside
+            }
+        }
+        
+    </script>
+    
+</body>
+</html>
